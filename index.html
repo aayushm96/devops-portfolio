@@ -1,273 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aayush Mishra | DevOps Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Mishra | DevOps Engineer</title>
 
-<!-- AOS Animation -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-<!-- DevIcons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-<style>
+    <style>
+        /* ============================= */
+        /* ROOT VARIABLES */
+        /* ============================= */
 
-/* ============================= */
-/* ROOT VARIABLES */
-/* ============================= */
+        :root {
+            --bg: #f5f6f8;
+            /* softer light grey */
+            --text: #111827;
+            /* rich dark text */
+            --card: #ffffff;
+            --accent: #4b5563;
+            /* stronger grey accent */
+        }
 
-:root {
-    --bg: #f5f6f8;        /* softer light grey */
-    --text: #111827;      /* rich dark text */
-    --card: #ffffff;      
-    --accent: #4b5563;    /* stronger grey accent */
-}
-.light-mode {
-    --bg: #f8fafc;
-    --text: #0f172a;
-    --card: #ffffff;
-    --accent: #2563eb;
-}
+        .light-mode {
+            --bg: #f8fafc;
+            --text: #0f172a;
+            --card: #ffffff;
+            --accent: #2563eb;
+        }
 
-/* ============================= */
-/* GLOBAL */
-/* ============================= */
+        /* ============================= */
+        /* GLOBAL */
+        /* ============================= */
 
-body {
-    margin: 0;
-    font-family: 'Courier New', monospace;
-    background: var(--bg);
-    color: var(--text);
-    transition: 0.3s ease;
-}
+        body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            background: var(--bg);
+            color: var(--text);
+            transition: 0.3s ease;
+        }
 
-section {
-    padding: 10px 10% 0px 10%;
-}
+        section {
+            padding: 10px 10% 0px 10%;
+        }
 
-h2 {
-    margin-bottom: 30px;
-}
+        h2 {
+            margin-bottom: 30px;
+        }
 
-.card {
-    background: var(--card);
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 40px;
-    transition: 0.3s ease;
-}
+        .card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            transition: 0.3s ease;
+        }
 
-.card:hover {
-    transform: translateY(-5px);
-}
+        .card:hover {
+            transform: translateY(-5px);
+        }
 
-/* ============================= */
-/* HEADER */
-/* ============================= */
+        /* ============================= */
+        /* HEADER */
+        /* ============================= */
 
-header {
-    text-align: center;
-    padding: 30px;
-    border-bottom: 1px solid var(--accent);
-}
+        header {
+            text-align: center;
+            padding: 30px;
+            border-bottom: 1px solid var(--accent);
+        }
 
-h1 {
-    color: var(--accent);
-}
+        h1 {
+            color: var(--accent);
+        }
 
-nav a {
-    color: var(--accent);
-    margin: 0 15px;
-    text-decoration: none;
-}
+        nav a {
+            color: var(--accent);
+            margin: 0 15px;
+            text-decoration: none;
+        }
 
-button {
-    background: var(--accent);
-    border: none;
-    padding: 10px 18px;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    margin: 10px;
-}
+        button {
+            background: var(--accent);
+            border: none;
+            padding: 10px 18px;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 10px;
+        }
 
-/* ============================= */
-/* CLEAN GRID SKILLS SECTION */
-/* ============================= */
+        /* ============================= */
+        /* CLEAN GRID SKILLS SECTION */
+        /* ============================= */
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);  /* fixed 6 per row */
-    gap: 30px;
-    justify-items: center;
-    align-items: center;
-}
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* fixed 6 per row */
+            gap: 30px;
+            justify-items: center;
+            align-items: center;
+        }
 
-.skills-grid img {
-    width: 45px;
-    height: 45px;
-    max-width: 100%;
-    object-fit: contain;
-    transition: 0.3s ease;
-}
+        .skills-grid img {
+            width: 45px;
+            height: 45px;
+            max-width: 100%;
+            object-fit: contain;
+            transition: 0.3s ease;
+        }
 
-.skills-grid img:hover {
-    transform: scale(1.15);
-}
-/* ============================= */
-/* EXPERIENCE */
-/* ============================= */
+        .skills-grid img:hover {
+            transform: scale(1.15);
+        }
 
-.role {
-    font-style: italic;
-    opacity: 0.8;
-    margin-bottom: 15px;
-}
+        /* ============================= */
+        /* EXPERIENCE */
+        /* ============================= */
 
-.exp-list li {
-    margin-bottom: 10px;
-}
+        .role {
+            font-style: italic;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
 
-/* ============================= */
-/* FOOTER */
-/* ============================= */
+        .exp-list li {
+            margin-bottom: 10px;
+        }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid var(--accent);
-}
+        /* ============================= */
+        /* FOOTER */
+        /* ============================= */
 
-</style>
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid var(--accent);
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>> Aayush Mishra</h1>
-    <p>☁ AWS | GCP | Kubernetes | Terraform | CI/CD</p>
-    <a href="AayushMishraDevops-9.pdf" download>
-        <button>Download Resume</button>
-    </a>
+    <header>
+        <h1>> Aayush Mishra</h1>
+        <p>☁ AWS | GCP | Kubernetes | Terraform | CI/CD</p>
+        <a href="AayushMishraDevops-9.pdf" download>
+            <button>Download Resume</button>
+        </a>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#achievements">Achievements</a>
-    </nav>
-</header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#achievements">Achievements</a>
+        </nav>
+    </header>
 
-<!-- ABOUT -->
+    <!-- ABOUT -->
 
-<section id="about" data-aos="fade-up">
-    <h2>$ whoami</h2>
-    <div class="card">
-DevOps Engineer with <strong>4 years of experience</strong> designing, automating, 
-and operating <strong>cloud-native infrastructure on AWS and GCP</strong>. Extensive hands-on 
-experience with <strong>Kubernetes (EKS), Terraform, Docker, Linux, Jenkins CI/CD, GitLab</strong> 
-and <strong>DevSecOps practices</strong>. Proven track record of managing 
-<strong>large-scale production environments</strong>, enhancing 
-<strong>system reliability</strong>, implementing 
-<strong>infrastructure as code (IaC)</strong>, and driving 
-<strong>cloud cost optimization</strong>.
-    </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-
-<section id="achievements" data-aos="zoom-in">
-    <h2>$ achievements --highlight</h2>
-    <div class="card">
-        <ul>
-            <li>🏆 Star of the Month (Sep 2024) – Python automation using boto3.</li>
-            <li>🚀 Star of the Month (Mar 2025) – Reduced infra cost via EC2/EKS scheduling.</li>
-            <li>🌐 Functional Award (Nov 2025) – Terraform Hub & Spoke AWS architecture.</li>
-        </ul>
-    </div>
-</section>
-
-<<section id="skills" data-aos="fade-right">
-    <h2>$ tech_stack</h2>
-
-    <div class="card skills-card">
-        <div class="skills-grid">
-
-            <!-- Cloud -->
-            <img src="./assets/icons/aws.svg" />
-            <img src="./assets/icons/google_cloud-icon.svg" />
-
-            <!-- Containers -->
-            <img src="https://cdn.simpleicons.org/kubernetes/326CE5" />
-            <img src="https://cdn.simpleicons.org/docker/2496ED" />
-            <img src="https://cdn.simpleicons.org/helm/0F1689" />
-            <img src="https://cdn.simpleicons.org/terraform/7B42BC" />
-
-            <!-- CI/CD -->
-            <img src="./assets/icons/jenkins.svg" />
-            <img src="https://cdn.simpleicons.org/gitlab/FC6D26" />
-            <img src="./assets/icons/github-tile.svg" />
-            <img src="./assets/icons/git-scm-icon.svg" />
-
-            <!-- Monitoring -->
-            <img src="https://cdn.simpleicons.org/prometheus/E6522C" />
-            <img src="https://cdn.simpleicons.org/grafana/F46800" />
-
-            <!-- Infra / OS -->
-            
-            <img src="./assets/icons/linux-icon.svg" />
-            <img src="./assets/icons/python-icon.svg" />
-            <img src="./assets/icons/groovy-lang-icon.svg" />
-            <img src="./assets/icons/yaml-icon.svg" />
-            <img src="./assets/icons/gnu_bash-icon.svg" />
-
+    <section id="about" data-aos="fade-up">
+        <h2>$ whoami</h2>
+        <div class="card">
+            DevOps Engineer with <strong>4 years of experience</strong> designing, automating,
+            and operating <strong>cloud-native infrastructure on AWS and GCP</strong>. Extensive hands-on
+            experience with <strong>Kubernetes (EKS), Terraform, Docker, Linux, Jenkins CI/CD, GitLab</strong>
+            and <strong>DevSecOps practices</strong>. Proven track record of managing
+            <strong>large-scale production environments</strong>, enhancing
+            <strong>system reliability</strong>, implementing
+            <strong>infrastructure as code (IaC)</strong> and driving
+            <strong>cloud cost optimization</strong>.
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- EXPERIENCE -->
+    <!-- ACHIEVEMENTS -->
 
-<section id="experience" data-aos="fade-left">
-    <h2>$ experience --professional</h2>
+    <section id="achievements" data-aos="zoom-in">
+        <h2>$ achievements --highlight</h2>
+        <div class="card">
+            <ul>
+                <li><strong>🏆 Star of the Month (Sep 2024)</strong> – Python automation using boto3 for seamless operations.</li>
+                <li><strong>🚀 Star of the Month (Mar 2025)</strong> – Reduced infra cost via EC2/EKS scheduling.</li>
+                <li><strong>🌐 Functional Award (Nov 2025)</strong>  – Terraform Hub & Spoke AWS architecture.</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="card">
-        <h3>Biz2X Platform Pvt. Ltd.</h3>
-        <p class="role">Senior DevOps Engineer | Sep 2023 – Present | Noida</p>
-        <ul class="exp-list">
-            <li>Managed AWS/GCP infra across 40+ AWS accounts and 40+ Kubernetes clusters.</li>
-            <li>Implemented DR using AWS Backup, cross-region replication & S3 CRR.</li>
-            <li>Configured Karpenter autoscaling reducing infra cost by 20%.</li>
-            <li>Built secure CI/CD pipelines with Jenkins & SonarQube.</li>
-        </ul>
-    </div>
+    <section id="skills" data-aos="fade-right">
+        <h2>$ tech_stack</h2>
 
-    <div class="card">
-        <h3>Infosys Limited</h3>
-        <p class="role">Systems Engineer | Feb 2022 – Aug 2023 | Noida</p>
-        <ul class="exp-list">
-            <li>Managed Jenkins HA setup and CI/CD pipelines.</li>
-            <li>Integrated Docker, Terraform, SonarQube & GitLab workflows.</li>
-        </ul>
-    </div>
+        <div class="card skills-card">
+            <div class="skills-grid">
 
-</section>
+                <img src="./assets/icons/aws.svg" />
+                <img src="./assets/icons/google_cloud-icon.svg" />
+                <img src="https://cdn.simpleicons.org/kubernetes/326CE5" />
+                <img src="https://cdn.simpleicons.org/docker/2496ED" />
+                <img src="https://cdn.simpleicons.org/helm/0F1689" />
+                <img src="https://cdn.simpleicons.org/terraform/7B42BC" />
+                <img src="./assets/icons/jenkins.svg" />
+                <img src="https://cdn.simpleicons.org/gitlab/FC6D26" />
+                <img src="./assets/icons/github-tile.svg" />
+                <img src="./assets/icons/git-scm-icon.svg" />
+                <img src="https://cdn.simpleicons.org/prometheus/E6522C" />
+                <img src="https://cdn.simpleicons.org/grafana/F46800" />
+                <img src="./assets/icons/linux-icon.svg" />
+                <img src="./assets/icons/python-icon.svg" />
+                <img src="./assets/icons/groovy-lang-icon.svg" />
+                <img src="./assets/icons/yaml-icon.svg" />
+                <img src="./assets/icons/gnu_bash-icon.svg" />
+
+            </div>
+        </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+
+        <section id="experience" data-aos="fade-left">
+            <h2>$ experience --professional</h2>
+
+            <div class="card">
+                <h3>Biz2X Platform Pvt. Ltd.</h3>
+                <p class="role">Senior DevOps Engineer | Sep 2023 – Present | Noida</p>
+                <ul class="exp-list">
+
+                    <li>
+                        Designed and managed <strong>AWS/GCP infrastructure using Terraform</strong>
+                        across <strong>40+ AWS accounts</strong>, supporting
+                        <strong>500+ servers</strong> and <strong>40+ Kubernetes clusters</strong>.
+                    </li>
+
+                    <li>
+                        Architected <strong>VPCs with public/private subnets</strong>, route tables,
+                        NAT Gateways, Internet Gateways, Transit Gateway and VPC Peering.
+                    </li>
+
+                    <li>
+                        Built and maintained <strong>CI/CD pipelines (Jenkins)</strong> for build, test,
+                        Docker image creation, security scanning, and deployment.
+                    </li>
+
+                    <li>
+                        Performed seamless <strong>EKS upgrades (v1.26 → v1.32)</strong> with zero downtime.
+                    </li>
+
+                    <li>
+                        Upgraded Jenkins master and worker nodes to the latest stable release
+                        <strong>(v2.190 → v2.361)</strong>.
+                    </li>
+
+                    <li>
+                        Implemented <strong>Disaster Recovery architecture</strong> using AWS Backup,
+                        cross-region EBS and RDS snapshot replication, and S3 versioning with CRR
+                        to ensure regional failover readiness.
+                    </li>
+
+                    <li>
+                        Containerized microservices using <strong>Docker</strong> and deployed to
+                        <strong>EKS/GKE using Helm</strong>, following GitOps practices.
+                    </li>
+
+                    <li>
+                        Implemented <strong>rolling, blue-green, and canary deployment strategies</strong>
+                        ensuring zero downtime releases.
+                    </li>
+
+                    <li>
+                        Configured <strong>Karpenter for Kubernetes autoscaling</strong>, reducing
+                        infrastructure cost by <strong>20%</strong>.
+                    </li>
+
+                    <li>
+                        Implemented <strong>DevSecOps practices</strong> using SonarQube/SonarScanner
+                        with quality gates and ECR image scanning.
+                    </li>
+
+                    <li>
+                        Centralized logging using <strong>FluentBit</strong>, reducing CloudWatch
+                        logging cost by <strong>30%</strong>.
+                    </li>
+
+                    <li>
+                        Implemented observability using <strong>CloudWatch, Container Insights,
+                            Prometheus, Grafana, and Site24x7</strong>.
+                    </li>
+
+                    <li>
+                        Strengthened security posture using <strong>AWS WAF, Imperva WAF,
+                            Trusted Advisor, IAM least privilege, Amazon Inspector,
+                            and Secrets Manager</strong>.
+                    </li>
+
+                    <li>
+                        Automated EC2/EKS scheduling, key rotation, Jenkins agent recovery,
+                        and infrastructure tasks using <strong>Shell scripting and Python (boto3)</strong>.
+                    </li>
+
+                    <li>
+                        Administered <strong>GitLab repositories and runners</strong>,
+                        managing merge strategies and access controls.
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Infosys Limited</h3>
+                <p class="role">Systems Engineer | Feb 2022 – Aug 2023 | Noida</p>
+                <ul class="exp-list">
+
+                    <li>
+                        Designed and maintained <strong>CI/CD pipelines</strong> for applications
+                        deployed on <strong>AWS EKS</strong>, ensuring automated and reliable releases.
+                    </li>
+
+                    <li>
+                        Installed, configured, and managed <strong>Jenkins master and agent nodes</strong>
+                        with high availability architecture.
+                    </li>
+
+                    <li>
+                        Implemented <strong>role-based access control (RBAC)</strong> and project-level
+                        permissions within Jenkins to enforce secure pipeline governance.
+                    </li>
+
+                    <li>
+                        Integrated <strong>Docker, Terraform, SonarQube, and GitLab</strong> into
+                        automated CI/CD workflows to streamline build, scan, and deployment processes.
+                    </li>
+
+                    <li>
+                        Automated <strong>multi-region deployments</strong>, improving pipeline
+                        reliability, release consistency, and delivery speed.
+                    </li>
+
+                    <li>
+                        Performed <strong>Jenkins upgrades, backups, plugin management,
+                            and security hardening</strong> to maintain platform stability and compliance.
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
 
 
 
-<footer>
-    © 2026 Aayush Mishra | DevOps Engineer Portfolio
-</footer>
+        <footer>
+            © 2026 Aayush Mishra | DevOps Engineer Portfolio
+        </footer>
 
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-AOS.init({ duration: 1000 });
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({ duration: 1000 });
 
-function toggleMode() {
-    document.body.classList.toggle("light-mode");
-}
-</script>
+            function toggleMode() {
+                document.body.classList.toggle("light-mode");
+            }
+        </script>
 
 </body>
+
 </html>
