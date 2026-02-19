@@ -100,27 +100,27 @@
         /* CLEAN GRID SKILLS SECTION */
         /* ============================= */
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            /* fixed 6 per row */
-            gap: 30px;
-            justify-items: center;
-            align-items: center;
-        }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 35px;
+    justify-items: center;
+    align-items: center;
+}
 
-        .skills-grid img {
-            width: 45px;
-            height: 45px;
-            max-width: 100%;
-            object-fit: contain;
-            transition: 0.3s ease;
-        }
+.skills-grid img {
+    width: 60px;          /* slightly larger */
+    height: 60px;
+    object-fit: contain;  /* keeps ratio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
 
-        .skills-grid img:hover {
-            transform: scale(1.15);
-        }
-
+.skills-grid img:hover {
+    transform: scale(1.15);
+}
         /* ============================= */
         /* EXPERIENCE */
         /* ============================= */
@@ -211,11 +211,14 @@
                 <img src="./assets/icons/git-scm-icon.svg" />
                 <img src="https://cdn.simpleicons.org/prometheus/E6522C" />
                 <img src="https://cdn.simpleicons.org/grafana/F46800" />
+                <img src="./assets/icons/ManageEngine Site24x7.svg" />
                 <img src="./assets/icons/linux-icon.svg" />
                 <img src="./assets/icons/python-icon.svg" />
                 <img src="./assets/icons/groovy-lang-icon.svg" />
+                <img src="./assets/icons/Fluent Bit_idrPZ6HGTb_0.svg" />
                 <img src="./assets/icons/yaml-icon.svg" />
-                <img src="./assets/icons/gnu_bash-icon.svg" />
+                <img src="./assets/icons/gnu_bash-icon.svg" />  
+                <img src="./assets/icons/karpenter.svg" />
 
             </div>
         </div>
