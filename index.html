@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aayush Mishra | DevOps Engineer</title>
+
+<!-- AOS Animation -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<!-- DevIcons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<style>
+
+/* ============================= */
+/* ROOT VARIABLES */
+/* ============================= */
+
+:root {
+    --bg: #f5f6f8;        /* softer light grey */
+    --text: #111827;      /* rich dark text */
+    --card: #ffffff;      
+    --accent: #4b5563;    /* stronger grey accent */
+}
+.light-mode {
+    --bg: #f8fafc;
+    --text: #0f172a;
+    --card: #ffffff;
+    --accent: #2563eb;
+}
+
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s ease;
+}
+
+section {
+    padding: 10px 10% 0px 10%;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid var(--accent);
+}
+
+h1 {
+    color: var(--accent);
+}
+
+nav a {
+    color: var(--accent);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+button {
+    background: var(--accent);
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* ============================= */
+/* CLEAN GRID SKILLS SECTION */
+/* ============================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);  /* fixed 6 per row */
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skills-grid img {
+    width: 45px;
+    height: 45px;
+    max-width: 100%;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+.skills-grid img:hover {
+    transform: scale(1.15);
+}
+/* ============================= */
+/* EXPERIENCE */
+/* ============================= */
+
+.role {
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.exp-list li {
+    margin-bottom: 10px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid var(--accent);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>> Aayush Mishra</h1>
+    <p>☁ AWS | GCP | Kubernetes | Terraform | CI/CD</p>
+    <a href="resume.pdf" download>
+        <button>Download Resume</button>
+    </a>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+</header>
+
+<!-- ABOUT -->
+
+<section id="about" data-aos="fade-up">
+    <h2>$ whoami</h2>
+    <div class="card">
+DevOps Engineer with <strong>4+ years of experience</strong> designing, automating, 
+and operating <strong>cloud-native infrastructure on AWS and GCP</strong>. Extensive hands-on 
+experience with <strong>Kubernetes (EKS), Terraform, Docker, Linux, Jenkins CI/CD, GitLab</strong> 
+and <strong>DevSecOps practices</strong>. Proven track record of managing 
+<strong>large-scale production environments</strong>, enhancing 
+<strong>system reliability</strong>, implementing 
+<strong>infrastructure as code (IaC)</strong>, and driving 
+<strong>cloud cost optimization</strong>.
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements" data-aos="zoom-in">
+    <h2>$ achievements --highlight</h2>
+    <div class="card">
+        <ul>
+            <li>🏆 Star of the Month (Sep 2024) – Python automation using boto3.</li>
+            <li>🚀 Star of the Month (Mar 2025) – Reduced infra cost via EC2/EKS scheduling.</li>
+            <li>🌐 Functional Award (Nov 2025) – Terraform Hub & Spoke AWS architecture.</li>
+        </ul>
+    </div>
+</section>
+
+<<section id="skills" data-aos="fade-right">
+    <h2>$ tech_stack</h2>
+
+    <div class="card skills-card">
+        <div class="skills-grid">
+
+            <!-- Cloud -->
+            <img src="./assets/icons/aws.svg" />
+            <img src="./assets/icons/google_cloud-icon.svg" />
+
+            <!-- Containers -->
+            <img src="https://cdn.simpleicons.org/kubernetes/326CE5" />
+            <img src="https://cdn.simpleicons.org/docker/2496ED" />
+            <img src="https://cdn.simpleicons.org/helm/0F1689" />
+            <img src="https://cdn.simpleicons.org/terraform/7B42BC" />
+
+            <!-- CI/CD -->
+            <img src="./assets/icons/jenkins.svg" />
+            <img src="https://cdn.simpleicons.org/gitlab/FC6D26" />
+            <img src="./assets/icons/github-tile.svg" />
+            <img src="./assets/icons/git-scm-icon.svg" />
+
+            <!-- Monitoring -->
+            <img src="https://cdn.simpleicons.org/prometheus/E6522C" />
+            <img src="https://cdn.simpleicons.org/grafana/F46800" />
+
+            <!-- Infra / OS -->
+            
+            <img src="./assets/icons/linux-icon.svg" />
+            <img src="./assets/icons/python-icon.svg" />
+            <img src="./assets/icons/groovy-lang-icon.svg" />
+            <img src="./assets/icons/yaml-icon.svg" />
+            <img src="./assets/icons/gnu_bash-icon.svg" />
+
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience" data-aos="fade-left">
+    <h2>$ experience --professional</h2>
+
+    <div class="card">
+        <h3>Biz2X Platform Pvt. Ltd.</h3>
+        <p class="role">Senior DevOps Engineer | Sep 2023 – Present | Noida</p>
+        <ul class="exp-list">
+            <li>Managed AWS/GCP infra across 40+ AWS accounts and 40+ Kubernetes clusters.</li>
+            <li>Implemented DR using AWS Backup, cross-region replication & S3 CRR.</li>
+            <li>Configured Karpenter autoscaling reducing infra cost by 20%.</li>
+            <li>Built secure CI/CD pipelines with Jenkins & SonarQube.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Infosys Limited</h3>
+        <p class="role">Systems Engineer | Feb 2022 – Aug 2023 | Noida</p>
+        <ul class="exp-list">
+            <li>Managed Jenkins HA setup and CI/CD pipelines.</li>
+            <li>Integrated Docker, Terraform, SonarQube & GitLab workflows.</li>
+        </ul>
+    </div>
+
+</section>
+
+
+
+<footer>
+    © 2026 Aayush Mishra | DevOps Engineer Portfolio
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+AOS.init({ duration: 1000 });
+
+function toggleMode() {
+    document.body.classList.toggle("light-mode");
+}
+</script>
+
+</body>
+</html>
