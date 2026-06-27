@@ -100,27 +100,30 @@
         /* CLEAN GRID SKILLS SECTION */
         /* ============================= */
 
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 35px;
-    justify-items: center;
-    align-items: center;
-}
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 35px;
+            justify-items: center;
+            align-items: center;
+        }
 
-.skills-grid img {
-    width: 60px;          /* slightly larger */
-    height: 60px;
-    object-fit: contain;  /* keeps ratio */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease;
-}
+        .skills-grid img {
+            width: 60px;
+            /* slightly larger */
+            height: 60px;
+            object-fit: contain;
+            /* keeps ratio */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease;
+        }
 
-.skills-grid img:hover {
-    transform: scale(1.15);
-}
+        .skills-grid img:hover {
+            transform: scale(1.15);
+        }
+
         /* ============================= */
         /* EXPERIENCE */
         /* ============================= */
@@ -186,9 +189,10 @@
         <h2>$ achievements --highlight</h2>
         <div class="card">
             <ul>
-                <li><strong>🏆 Star of the Month (Sep 2024)</strong> – Python automation using boto3 for seamless operations.</li>
+                <li><strong>🏆 Star of the Month (Sep 2024)</strong> – Python automation using boto3 for seamless
+                    operations.</li>
                 <li><strong>🚀 Star of the Month (Mar 2025)</strong> – Reduced infra cost via EC2/EKS scheduling.</li>
-                <li><strong>🌐 Functional Award (Nov 2025)</strong>  – Terraform Hub & Spoke AWS architecture.</li>
+                <li><strong>🌐 Functional Award (Nov 2025)</strong> – Terraform Hub & Spoke AWS architecture.</li>
             </ul>
         </div>
     </section>
@@ -217,179 +221,180 @@
                 <img src="./assets/icons/groovy-lang-icon.svg" />
                 <img src="./assets/icons/Fluent Bit_idrPZ6HGTb_0.svg" />
                 <img src="./assets/icons/yaml-icon.svg" />
-                <img src="./assets/icons/gnu_bash-icon.svg" />  
+                <img src="./assets/icons/gnu_bash-icon.svg" />
                 <img src="./assets/icons/karpenter.svg" />
+                <img src="./assets/icons/Argo CD.svg" />
+                <img src="./assets/icons/teamcity-icon.svg" />
 
             </div>
         </div>
-        </section>
+    </section>
 
-        <!-- EXPERIENCE -->
+    <!-- EXPERIENCE -->
 
-        <section id="experience" data-aos="fade-left">
-            <h2>$ experience --professional</h2>
+    <section id="experience" data-aos="fade-left">
+        <h2>$ experience --professional</h2>
 
-            <div class="card">
-                <h3>Opkey - Smart Software Testing Solutions Pvt. Ltd.</h3>
-                <p class="role">Senior DevOps & Cloud Engineer | Apr 2026 – Present | Noida</p>
-                <ul class="exp-list">
-
-                    <li>
-                        Led end-to-end migration of 50+ <strong>TeamCity CI/CD pipelines</strong> to Jenkins CI/CD, 
-                        reducing pipeline configuration complexity by 60% through groovy standardization and reusable templates.
-                    </li>
-
-                    <li>
-                        Automated application deployment and rollback using <strong>Helm</strong>, enabling single-click provisioning of Deployments, 
-                        Services, ConfigMaps, PVCs and Ingress through scripted sub-chart orchestration.
-                    </li>
-
-                    <li>
-                        Designed and implemented on-prem Kubernetes infrastructure using   <strong>Rancher (RKE2)</strong> for deployment of
-                        35–45 microservices.
-                    </li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Biz2X Platform Pvt. Ltd.</h3>
-                <p class="role">Senior DevOps Engineer | Sep 2023 – Apr 2026 | Noida</p>
-                <ul class="exp-list">
-
-                    <li>
-                        Designed and managed <strong>AWS/GCP infrastructure using Terraform</strong>
-                        across <strong>40+ AWS accounts</strong>, supporting
-                        <strong>500+ servers</strong> and <strong>40+ Kubernetes clusters</strong>.
-                    </li>
-
-                    <li>
-                        Architected <strong>VPCs with public/private subnets</strong>, route tables,
-                        NAT Gateways, Internet Gateways, Transit Gateway and VPC Peering.
-                    </li>
-
-                    <li>
-                        Built and maintained <strong>CI/CD pipelines (Jenkins)</strong> for build, test,
-                        Docker image creation, security scanning, and deployment.
-                    </li>
-
-                    <li>
-                        Performed seamless <strong>EKS upgrades (v1.26 → v1.32)</strong> with zero downtime.
-                    </li>
-
-                    <li>
-                        Upgraded Jenkins master and worker nodes to the latest stable release
-                        <strong>(v2.190 → v2.361)</strong>.
-                    </li>
-
-                    <li>
-                        Implemented <strong>Disaster Recovery architecture</strong> using AWS Backup,
-                        cross-region EBS and RDS snapshot replication, and S3 versioning with CRR
-                        to ensure regional failover readiness.
-                    </li>
-
-                    <li>
-                        Containerized microservices using <strong>Docker</strong> and deployed to
-                        <strong>EKS/GKE using Helm</strong>, following GitOps practices.
-                    </li>
-
-                    <li>
-                        Implemented <strong>rolling, blue-green, and canary deployment strategies</strong>
-                        ensuring zero downtime releases.
-                    </li>
-
-                    <li>
-                        Configured <strong>Karpenter for Kubernetes autoscaling</strong>, reducing
-                        infrastructure cost by <strong>20%</strong>.
-                    </li>
-
-                    <li>
-                        Implemented <strong>DevSecOps practices</strong> using SonarQube/SonarScanner
-                        with quality gates and ECR image scanning.
-                    </li>
-
-                    <li>
-                        Centralized logging using <strong>FluentBit</strong>, reducing CloudWatch
-                        logging cost by <strong>30%</strong>.
-                    </li>
-
-                    <li>
-                        Implemented observability using <strong>CloudWatch, Container Insights,
-                            Prometheus, Grafana, and Site24x7</strong>.
-                    </li>
-
-                    <li>
-                        Strengthened security posture using <strong>AWS WAF, Imperva WAF,
-                            Trusted Advisor, IAM least privilege, Amazon Inspector,
-                            and Secrets Manager</strong>.
-                    </li>
-
-                    <li>
-                        Automated EC2/EKS scheduling, key rotation, Jenkins agent recovery,
-                        and infrastructure tasks using <strong>Shell scripting and Python (boto3)</strong>.
-                    </li>
-
-                    <li>
-                        Administered <strong>GitLab repositories and runners</strong>,
-                        managing merge strategies and access controls.
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Infosys Limited</h3>
-                <p class="role">Systems Engineer | Feb 2022 – Aug 2023 | Noida</p>
-                <ul class="exp-list">
-
-                    <li>
-                        Designed and maintained <strong>CI/CD pipelines</strong> for applications
-                        deployed on <strong>AWS EKS</strong>, ensuring automated and reliable releases.
-                    </li>
-
-                    <li>
-                        Installed, configured, and managed <strong>Jenkins master and agent nodes</strong>
-                        with high availability architecture.
-                    </li>
-
-                    <li>
-                        Implemented <strong>role-based access control (RBAC)</strong> and project-level
-                        permissions within Jenkins to enforce secure pipeline governance.
-                    </li>
-
-                    <li>
-                        Integrated <strong>Docker, Terraform, SonarQube, and GitLab</strong> into
-                        automated CI/CD workflows to streamline build, scan, and deployment processes.
-                    </li>
-
-                    <li>
-                        Automated <strong>multi-region deployments</strong>, improving pipeline
-                        reliability, release consistency, and delivery speed.
-                    </li>
-
-                    <li>
-                        Performed <strong>Jenkins upgrades, backups, plugin management,
-                            and security hardening</strong> to maintain platform stability and compliance.
-                    </li>
-
-                </ul>
-            </div>
-
-        </section>
+        <div class="card">
+            <h3>Opkey - Smart Software Testing Solutions Pvt. Ltd.</h3>
+            <p class="role">Senior DevOps & Cloud Engineer | Apr 2026 – Present | Noida</p>
+            <ul class="exp-list">
 
 
+                <li> Led end-to-end migration of 50+ TeamCity CI pipelines to Jenkins CI/CD, reducing pipeline con-
+                    figuration complexity by 60% through Groovy standardization and reusable pipeline templates.
+                <li>Reduced cost and decreased deployment time for multiple services from 3Hours to 30mins using Spot
+                    Instances for quick deployements on multiple environments.</li>
+                <li>Automated application deployment and rollback using Helm, enabling single-click provisioning of De-
+                    ployments, Services, ConfigMaps, PVCs, and Ingress resources through scripted sub-chart or-
+                    chestration.</li>
+                <li>Provisioned and managed Azure Virtual Machines using Terraform for application hosting, CI/CD
+                    workloads, and operational infrastructure requirements.</li>
+                <li>Configured and maintained self-hosted CI/CD runners on Azure Virtual Machines, enabling secure
+                    cross-
+                    cloud deployment workflows and automation between AWS and Azure environments.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Biz2X Platform Pvt. Ltd.</h3>
+            <p class="role">Senior DevOps Engineer | Sep 2023 – Apr 2026 | Noida</p>
+            <ul class="exp-list">
 
-        <footer>
-            © 2026 Aayush Mishra | DevOps Engineer Portfolio
-        </footer>
+                <li>
+                    Designed and managed <strong>AWS/GCP infrastructure using Terraform</strong>
+                    across <strong>40+ AWS accounts</strong>, supporting
+                    <strong>500+ servers</strong> and <strong>40+ Kubernetes clusters</strong>.
+                </li>
 
-        <!-- Scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <script>
-            AOS.init({ duration: 1000 });
+                <li>
+                    Architected <strong>VPCs with public/private subnets</strong>, route tables,
+                    NAT Gateways, Internet Gateways, Transit Gateway and VPC Peering.
+                </li>
 
-            function toggleMode() {
-                document.body.classList.toggle("light-mode");
-            }
-        </script>
+                <li>
+                    Built and maintained <strong>CI/CD pipelines (Jenkins)</strong> for build, test,
+                    Docker image creation, security scanning, and deployment.
+                </li>
+
+                <li>
+                    Performed seamless <strong>EKS upgrades (v1.26 → v1.32)</strong> with zero downtime.
+                </li>
+
+                <li>
+                    Upgraded Jenkins master and worker nodes to the latest stable release
+                    <strong>(v2.190 → v2.361)</strong>.
+                </li>
+
+                <li>
+                    Implemented <strong>Disaster Recovery architecture</strong> using AWS Backup,
+                    cross-region EBS and RDS snapshot replication, and S3 versioning with CRR
+                    to ensure regional failover readiness.
+                </li>
+
+                <li>
+                    Containerized microservices using <strong>Docker</strong> and deployed to
+                    <strong>EKS/GKE using Helm</strong>, following GitOps practices.
+                </li>
+
+                <li>
+                    Implemented <strong>rolling, blue-green, and canary deployment strategies</strong>
+                    ensuring zero downtime releases.
+                </li>
+
+                <li>
+                    Configured <strong>Karpenter for Kubernetes autoscaling</strong>, reducing
+                    infrastructure cost by <strong>20%</strong>.
+                </li>
+
+                <li>
+                    Implemented <strong>DevSecOps practices</strong> using SonarQube/SonarScanner
+                    with quality gates and ECR image scanning.
+                </li>
+
+                <li>
+                    Centralized logging using <strong>FluentBit</strong>, reducing CloudWatch
+                    logging cost by <strong>30%</strong>.
+                </li>
+
+                <li>
+                    Implemented observability using <strong>CloudWatch, Container Insights,
+                        Prometheus, Grafana, and Site24x7</strong>.
+                </li>
+
+                <li>
+                    Strengthened security posture using <strong>AWS WAF, Imperva WAF,
+                        Trusted Advisor, IAM least privilege, Amazon Inspector,
+                        and Secrets Manager</strong>.
+                </li>
+
+                <li>
+                    Automated EC2/EKS scheduling, key rotation, Jenkins agent recovery,
+                    and infrastructure tasks using <strong>Shell scripting and Python (boto3)</strong>.
+                </li>
+
+                <li>
+                    Administered <strong>GitLab repositories and runners</strong>,
+                    managing merge strategies and access controls.
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Infosys Limited</h3>
+            <p class="role">Systems Engineer | Feb 2022 – Aug 2023 | Noida</p>
+            <ul class="exp-list">
+
+                <li>
+                    Designed and maintained <strong>CI/CD pipelines</strong> for applications
+                    deployed on <strong>AWS EKS</strong>, ensuring automated and reliable releases.
+                </li>
+
+                <li>
+                    Installed, configured, and managed <strong>Jenkins master and agent nodes</strong>
+                    with high availability architecture.
+                </li>
+
+                <li>
+                    Implemented <strong>role-based access control (RBAC)</strong> and project-level
+                    permissions within Jenkins to enforce secure pipeline governance.
+                </li>
+
+                <li>
+                    Integrated <strong>Docker, Terraform, SonarQube, and GitLab</strong> into
+                    automated CI/CD workflows to streamline build, scan, and deployment processes.
+                </li>
+
+                <li>
+                    Automated <strong>multi-region deployments</strong>, improving pipeline
+                    reliability, release consistency, and delivery speed.
+                </li>
+
+                <li>
+                    Performed <strong>Jenkins upgrades, backups, plugin management,
+                        and security hardening</strong> to maintain platform stability and compliance.
+                </li>
+
+            </ul>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        © 2026 Aayush Mishra | DevOps Engineer Portfolio
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+
+        function toggleMode() {
+            document.body.classList.toggle("light-mode");
+        }
+    </script>
 
 </body>
 
